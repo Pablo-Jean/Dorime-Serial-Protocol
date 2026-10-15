@@ -166,8 +166,7 @@ make it easy to compose the values of multiple blocks.
 
 */
 
-unsigned int
-xcrc32 (const unsigned char *buf, int len, unsigned int init)
+uint32_t xcrc32 (uint8_t *buf, uint32_t len, uint32_t init)
 {
   unsigned int crc = init;
   while (len--)
